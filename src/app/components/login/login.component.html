@@ -1,0 +1,29 @@
+<h2>Log in</h2>
+<form class="formlogin" [formGroup]="loginForm" (ngSubmit)="handleLogin()">
+  <div>
+    <input
+      class="email"
+      placeholder="email"
+      type="text"
+      name="email"
+      formControlName="email"
+      required
+    />
+  </div>
+  <br />
+  <div>
+    <input
+      class="password"
+      placeholder="password"
+      type="password"
+      name="password"
+      formControlName="password"
+      required
+    />
+  </div>
+  <br />
+  <div class="buttoncontinue">
+    <input class="buttonreal" type="submit" value="Continue" />
+  </div>
+  <h3>Aún no tienes cuenta? Regístrate aquí</h3>
+</form>

@@ -1,0 +1,26 @@
+h2 {
+  font-weight: bold;
+  margin-left: 0.5rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+p {
+}
+
+button {
+  margin-top: 50px;
+  padding: 5px;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding-inline: 7rem;
+  cursor: pointer;
+}
+
+input {
+  width: 250px;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 5px;
+}
