@@ -1,0 +1,24 @@
+<div class="firstcontainer">
+  <h1>Welcome to Mantra</h1>
+  <div class="logo">
+    <img
+      class="logo"
+      src="../../../assets/icons/covervinyl.svg.svg"
+      alt="logo"
+      width="30%"
+      height="30%"
+    />
+  </div>
+  <div class="infomantra">
+    <p class="groove">· · The Groove is in the Vinyl · ·</p>
+  </div>
+  @if (user?.role === "admin") {
+  <button
+    [routerLink]="['/catalogue']"
+    routerLinkActive="router-link-active"
+    class="btn"
+  >
+    Catalogue
+  </button>
+  }
+</div>

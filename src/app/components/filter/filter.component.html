@@ -1,11 +1,16 @@
-<h2>Search</h2>
-<ul>
-  <li>Rock</li>
-  <li>Pop</li>
-  <li>Hip-Hop</li>
-  <li>R&B</li>
-  <li>Electronic</li>
-  <li>Metal</li>
-  <li>Jazz</li>
-  <li>Latin</li>
-</ul>
+<main>
+  <h2>Search</h2>
+  <ul>
+    @for (genre of genres; track $index) {
+    <li
+      tabindex="{{ $index }}"
+      (keyup)="selectFilter(genre)"
+      (click)="selectFilter(genre)"
+    >
+      {{ genre }}
+      <img src="../../../assets/icons/chevron.right.png" alt="right" />
+    </li>
+    }
+  </ul>
+  <app-menunav></app-menunav>
+</main>

@@ -1,12 +1,36 @@
 <footer>
   <nav>
     <ul>
-      <li><img src="../../../assets/icons/house.png" alt="" /></li>
-      <li><img src="../../../assets/icons/magnifyingglass.png" alt="" /></li>
+      <li>
+        <a [routerLink]="['/home']" routerLinkActive="router-link-active"
+          ><img src="../../../assets/icons/house.png" alt="home"
+        /></a>
+      </li>
+      <li>
+        <a [routerLink]="['/filter']" routerLinkActive="router-link-active"
+          ><img src="../../../assets/icons/magnifyingglass.png" alt="filter"
+        /></a>
+      </li>
       <li><img src="../../../assets/icons/bag.png" alt="" /></li>
       <li><img src="../../../assets/icons/heart.png" alt="" /></li>
-      <li><img src="../../../assets/icons/headphones.png" alt="" /></li>
-      <li><img src="../../../assets/icons/person.crop.circle.png" alt="" /></li>
+      <div>
+        <li>
+          <a [routerLink]="['/lists']" routerLinkActive="router-link-active"
+            ><img
+              src="../../../assets/icons/headphones.png"
+              alt="icon headphones"
+          /></a>
+        </li>
+      </div>
+      <div>
+        <li>
+          <a [routerLink]="['/login']" routerLinkActive="router-link-active"
+            ><img
+              src="../../../assets/icons/person.crop.circle.png"
+              alt="Icon person"
+          /></a>
+        </li>
+      </div>
     </ul>
   </nav>
 </footer>

@@ -1,10 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule, FormBuilder } from '@angular/forms';
 import { of } from 'rxjs';
-import { RepoUsersService } from '../../services/repo.users.service';
-import { StateService } from '../../services/state.service';
-import { SigninComponent } from './signin.component';
-import { User } from '../../models/users.model';
+import { StateService } from '../../services/state.service.js';
+import { User } from '../../models/users.model.js';
+import SigninComponent from './signin.component.js';
+import { RepoUsersService } from '../../services/repo.users.service.js';
 
 describe('RegisterComponent', () => {
   let component: SigninComponent;
@@ -59,4 +59,6 @@ describe('RegisterComponent', () => {
     expect(component.handleRegister).toHaveBeenCalled();
     expect(component.repoService.create).toHaveBeenCalledWith(user);
   });
+
+  it('error', () => {});
 });

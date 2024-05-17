@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { MenunavComponent } from '../menunav/menunav.component';
 
 @Component({
   selector: 'app-lists',
   standalone: true,
-  imports: [],
   templateUrl: './lists.component.html',
-  styleUrl: './lists.component.css'
+  styleUrl: './lists.component.css',
+  imports: [MenunavComponent],
 })
-export class ListsComponent {
-
-}
+export default class ListsComponent {}

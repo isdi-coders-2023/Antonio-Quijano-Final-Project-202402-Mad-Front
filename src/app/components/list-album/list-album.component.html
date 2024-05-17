@@ -1,0 +1,9 @@
+<div class="searchered">
+  <ul>
+    @for (album of albums; track $index) {
+    <li>
+      <app-card-album [album]="album"></app-card-album>
+    </li>
+    }
+  </ul>
+</div>

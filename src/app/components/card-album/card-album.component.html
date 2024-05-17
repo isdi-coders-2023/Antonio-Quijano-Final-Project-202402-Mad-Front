@@ -1,0 +1,20 @@
+<div class="block1">
+  @if (album) {
+  <a
+    tabindex="0"
+    (click)="this.state.goToDetails(this.album.id)"
+    (keyup)="this.state.goToDetails(this.album.id)"
+  >
+    <img
+      class="imagecont"
+      [src]="album.cover"
+      [alt]="album.album"
+      width="185px"
+      height="185px"
+    />
+  </a>
+  <p class="albumcont">{{ album.artist }} · {{ album.album }}</p>
+  <p class="pricecont">{{ album.price }}EUR</p>
+
+  }
+</div>

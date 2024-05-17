@@ -4,3 +4,11 @@ main {
   align-items: center;
   justify-content: space-evenly;
 }
+
+:host {
+  display: block;
+  /* background-image: ; */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

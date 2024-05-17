@@ -1,1 +1,41 @@
-<p>home works!</p>
+<h2>Hi!</h2>
+<div class="firstcontainer">
+  @if (randomAlbum) {
+  <img
+    src="{{ this.randomAlbum.cover }}"
+    alt="Disco"
+    width="55%"
+    height="55%"
+  />
+  <div class="infocontainer">
+    <p class="recommend">We Recommend</p>
+    <p class="namealbum">
+      {{ this.randomAlbum.album }} · {{ this.randomAlbum.artist }}
+    </p>
+    <div class="flechita">
+      <a
+        tabindex="0"
+        (click)="goToDetails(this.randomAlbum.id)"
+        (keyup)="goToDetails(this.randomAlbum.id)"
+        ><img
+          src="../../../assets/icons/flecha.png"
+          alt="arrow"
+          width="30px"
+          height="30px"
+          class="imgcontainer1"
+      /></a>
+    </div>
+  </div>
+  }
+</div>
+
+<h2>News</h2>
+<div class="newsalbum">
+  <app-list-album [albums]="newsAlbum"></app-list-album>
+</div>
+<div>
+  <h2>Best Price</h2>
+  <div class="bestprice">
+    <app-list-album [albums]="bestPriceAlbum"></app-list-album>
+  </div>
+</div>

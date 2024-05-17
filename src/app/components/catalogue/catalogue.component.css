@@ -1,0 +1,17 @@
+.firstcontainer {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  button {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+}

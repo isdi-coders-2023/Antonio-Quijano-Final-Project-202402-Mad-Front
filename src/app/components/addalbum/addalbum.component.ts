@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './addalbum.component.html',
-  styleUrl: './addalbum.component.css'
+  styleUrl: './addalbum.component.css',
 })
-export class AddalbumComponent {
-
-}
+export default class AddalbumComponent {}

@@ -1,0 +1,21 @@
+<div class="allalbums">
+  <div class="firstcontainer">
+    <h1>Catalogue</h1>
+    <button
+      [routerLink]="['/addalbum']"
+      routerLinkActive="router-link-active"
+      class="btn"
+    >
+      Add a new Album
+    </button>
+  </div>
+  <div>
+    <ul>
+      @for (album of albums; track $index) {
+      <li>
+        <app-card-album [album]="album"></app-card-album>
+      </li>
+      }
+    </ul>
+  </div>
+</div>

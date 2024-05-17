@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule, FormBuilder } from '@angular/forms';
 import { of, throwError } from 'rxjs';
 import { StateService } from '../../services/state.service';
-import { LoginComponent } from './login.component';
+import LoginComponent from './login.component';
 import { RepoUsersService } from '../../services/repo.users.service';
 
 describe('LoginComponent', () => {

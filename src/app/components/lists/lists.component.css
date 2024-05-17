@@ -3,6 +3,7 @@ h2 {
   margin-left: 0.5rem;
   margin-top: 2rem;
   text-align: left;
+  padding-bottom: 40px;
 }
 
 :host {
@@ -20,10 +21,8 @@ h2 {
   padding-right: 5px;
 }
 
-.fila::after {
-  content: "";
-  clear: both;
-  display: table;
+.bottom {
+  padding-bottom: 5rem;
 }
 
 img {
@@ -34,4 +33,10 @@ img {
 
 p {
   margin-left: 0.7rem;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

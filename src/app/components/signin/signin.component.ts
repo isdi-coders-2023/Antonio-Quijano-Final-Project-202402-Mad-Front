@@ -1,16 +1,18 @@
 import { Component, inject } from '@angular/core';
-import { RepoUsersService } from '../../services/repo.users.service';
-import { StateService } from '../../services/state.service';
+
+import { StateService } from '../../services/state.service.js';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { MenunavComponent } from '../menunav/menunav.component.js';
+import { RepoUsersService } from '../../services/repo.users.service.js';
 
 @Component({
   selector: 'app-signin',
   standalone: true,
-  imports: [ReactiveFormsModule],
   templateUrl: './signin.component.html',
   styleUrl: './signin.component.css',
+  imports: [ReactiveFormsModule, MenunavComponent],
 })
-export class SigninComponent {
+export default class SigninComponent {
   registeredError: boolean;
   repoService = inject(RepoUsersService);
   stateService = inject(StateService);

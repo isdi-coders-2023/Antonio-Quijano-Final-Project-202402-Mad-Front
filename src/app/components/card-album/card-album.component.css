@@ -1,0 +1,14 @@
+.block1 {
+  max-width: 185px;
+  img {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    margin-top: 0.3rem;
+    display: flex;
+    margin-left: 0rem;
+  }
+}
