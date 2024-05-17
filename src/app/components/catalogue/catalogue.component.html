@@ -13,7 +13,26 @@
     <ul>
       @for (album of albums; track $index) {
       <li>
-        <app-card-album [album]="album"></app-card-album>
+        <app-card-album [album]="album"> </app-card-album>
+        <div class="icons">
+          <img
+            [routerLink]="['/editalbum', album.id]"
+            routerLinkActive="router-link-active"
+            src="../../../assets/icons/edit.svg"
+            alt="edit"
+            width="25px"
+            height="25px"
+          />
+          <img
+            (click)="getDeleteAlbum(album.id)"
+            src="../../../assets/icons/delete.svg"
+            alt="delete"
+            width="25px"
+            height="25px"
+            (keydown)="getDeleteAlbum(album.id)"
+            tabindex="0"
+          />
+        </div>
       </li>
       }
     </ul>

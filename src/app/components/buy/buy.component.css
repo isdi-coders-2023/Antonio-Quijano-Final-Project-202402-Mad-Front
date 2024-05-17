@@ -1,0 +1,12 @@
+h1 {
+  padding: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nextimp {
+  gap: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

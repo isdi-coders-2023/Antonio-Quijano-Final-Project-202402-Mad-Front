@@ -1,46 +1,50 @@
 <h2>Edit a album</h2>
-<form action="#" method="POST">
+<form [formGroup]="editAlbumForm" (submit)="onSubmit()">
   <div>
     <label for="artist">Artist:</label><br />
-    <input type="text" id="artist" name="artist" /><br />
+    <input type="text" id="artist" formControlName="artist" /><br />
   </div>
   <div>
     <label for="album">Album:</label><br />
-    <input type="text" id="album" name="album" /><br />
+    <input type="text" id="album" formControlName="album" /><br />
   </div>
   <div>
     <label for="stock">Stock:</label><br />
-    <input type="number" id="stock" name="stock" /><br />
+    <input type="number" id="stock" formControlName="stock" /><br />
   </div>
   <div>
     <label for="duration">Duration:</label><br />
-    <input type="text" id="duration" name="duration" /><br />
+    <input type="text" id="duration" formControlName="duration" /><br />
   </div>
   <div>
     <label for="price">Price:</label><br />
-    <input type="text" id="price" name="price" /><br />
+    <input type="text" id="price" formControlName="price" /><br />
   </div>
   <div>
     <label for="genre">Genre:</label><br />
-    <input type="text" id="genre" name="genre" /><br />
+    <input type="text" id="genre" formControlName="genre" /><br />
   </div>
   <div>
-    <label for="record_company">Record Company:</label><br />
-    <input type="text" id="record_company" name="record_company" /><br />
+    <label for="recordCompany">Record Company:</label><br />
+    <input
+      type="text"
+      id="recordCompany"
+      formControlName="recordCompany"
+    /><br />
   </div>
   <div>
     <label for="producer">Producer:</label><br />
-    <input type="text" id="producer" name="producer" /><br />
+    <input type="text" id="producer" formControlName="producer" /><br />
   </div>
-  <div class="moreinfo">
-    <label for="more_info">More Information:</label><br />
-    <textarea id="more_info" name="more_info"></textarea><br />
+  <div class="moreInfo">
+    <label for="moreInfo">More Information:</label><br />
+    <textarea id="moreInfo" formControlName="moreInfo"></textarea><br />
   </div>
   <div class="uploadimage">
-    <label for="image">Upload Image:</label>
-    <input type="file" id="image" name="image" /><br />
+    <label for="cover">Upload Image:</label>
+    <input type="file" id="cover" (change)="onFileChange()" #cover /><br />
   </div>
   <div>
-    <button type="submit">Edit</button>
+    <button type="submit" [disabled]="editAlbumForm.invalid">Add</button>
   </div>
 </form>

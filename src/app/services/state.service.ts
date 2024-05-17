@@ -53,6 +53,10 @@ export class StateService {
     return this.state$.value;
   }
 
+  setState(state: State) {
+    this.state$.next(state);
+  }
+
   setLoginState(loginState: LoginState): void {
     this.state$.next({ ...this.state$.value, loginState });
   }

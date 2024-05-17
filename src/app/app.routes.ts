@@ -16,6 +16,11 @@ export const routes: Routes = [
     loadComponent: () => import('./components/catalogue/catalogue.component'),
   },
   {
+    path: 'buy',
+    title: 'Buy',
+    loadComponent: () => import('./components/buy/buy.component'),
+  },
+  {
     path: 'register',
     title: 'Registro',
     loadComponent: () => import('./components/signin/signin.component'),
@@ -47,7 +52,7 @@ export const routes: Routes = [
     loadComponent: () => import('./components/checkbuy/checkbuy.component'),
   },
   {
-    path: 'editalbum',
+    path: 'editalbum/:id',
     title: 'Edit album',
     loadComponent: () => import('./components/editalbum/editalbum.component'),
   },
