@@ -1,0 +1,42 @@
+h2 {
+  font-weight: bold;
+  margin-left: 0.5rem;
+  margin-top: 2rem;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+:host {
+  width: 100%;
+  padding-block-end: 4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.columna {
+  float: left;
+  width: 50%;
+  padding-right: 5px;
+}
+
+.bottom {
+  padding-bottom: 5rem;
+}
+
+img {
+  margin-left: 0.5rem;
+  margin-top: 2rem;
+  border-radius: 20px;
+}
+
+p {
+  margin-left: 0.7rem;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

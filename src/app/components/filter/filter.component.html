@@ -1,0 +1,16 @@
+<main>
+  <h2>Search</h2>
+  <ul>
+    @for (genre of genres; track $index) {
+    <li
+      tabindex="{{ $index }}"
+      (keyup)="selectFilter(genre)"
+      (click)="selectFilter(genre)"
+    >
+      {{ genre }}
+      <img src="../../../assets/icons/chevron.right.png" alt="right" />
+    </li>
+    }
+  </ul>
+  <app-menunav></app-menunav>
+</main>

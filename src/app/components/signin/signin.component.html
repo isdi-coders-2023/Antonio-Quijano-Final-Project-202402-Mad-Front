@@ -1,0 +1,130 @@
+<main>
+  @if (!this.registeredError) {
+  <div class="containerlogin">
+    <img
+      class="logo"
+      src="../../../assets/icons/covervinyl.svg.svg"
+      alt="logo"
+      width="30%"
+      height="30%"
+    />
+    <h2>Sign in</h2>
+    <form
+      class="formlogin"
+      [formGroup]="signInForm"
+      (ngSubmit)="handleRegister()"
+    >
+      <div>
+        <input
+          class="name"
+          placeholder="name"
+          type="text"
+          name="name"
+          formControlName="name"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <input
+          class="email"
+          name="email"
+          type="text"
+          placeholder="email"
+          formControlName="email"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <input
+          class="password"
+          placeholder="password"
+          type="password"
+          name="password"
+          formControlName="password"
+          required
+        />
+        <br />
+        <br />
+        <label class="checkb"
+          ><input
+            type="checkbox"
+            id="cbox1"
+            value="first_checkbox"
+            required
+          />Acepto términos y condiciones de privacidad.</label
+        >
+      </div>
+      <br />
+      <div class="buttoncontinue">
+        <input class="buttonreal" type="submit" value="Continue" />
+      </div>
+    </form>
+  </div>
+  } @else {
+  <div class="containerlogin">
+    <img
+      class="logo"
+      src="../../../assets/icons/covervinyl.svg.svg"
+      alt="logo"
+      width="30%"
+      height="30%"
+    />
+    <h2>Sign in</h2>
+    <form
+      class="formlogin"
+      [formGroup]="signInForm"
+      (ngSubmit)="handleRegister()"
+    >
+      <div>
+        <input
+          class="name"
+          placeholder="name"
+          type="text"
+          name="name"
+          formControlName="name"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <input
+          class="email"
+          name="email"
+          type="text"
+          placeholder="email"
+          formControlName="email"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <input
+          class="password"
+          placeholder="password"
+          type="password"
+          name="password"
+          formControlName="password"
+          required
+        />
+        <br />
+        <br />
+        <label class="checkb"
+          ><input
+            type="checkbox"
+            id="cbox1"
+            value="first_checkbox"
+            required
+          />Acepto términos y condiciones de privacidad.</label
+        >
+      </div>
+      <br />
+      <div class="buttoncontinue">
+        <input class="buttonreal" type="submit" value="Continue" />
+      </div>
+    </form>
+  </div>
+  }
+  <app-menunav></app-menunav>
+</main>

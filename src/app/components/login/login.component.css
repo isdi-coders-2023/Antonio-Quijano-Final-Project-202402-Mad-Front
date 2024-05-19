@@ -1,0 +1,73 @@
+h2 {
+  margin-block: 2rem;
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.formlogin {
+  padding-top: 2rem;
+  text-align: center;
+  gap: 10px;
+
+  .email {
+    margin-top: 25px;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    padding: 5px;
+    width: 250px;
+  }
+  .password {
+    display: inline-flex;
+    width: 250px;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .buttoncontinue {
+    text-align: center;
+    width: 250px;
+    margin-inline: auto;
+    margin-top: 30px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding-inline: 3rem;
+    cursor: pointer;
+    align-items: center;
+  }
+  .buttonreal {
+    align-items: center;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+h3 {
+  padding-top: 1rem;
+  font-size: 13px;
+  text-align: center;
+}
+
+.registrate {
+  padding-top: 1rem;
+}
+a {
+  color: black;
+}
+
+.containerlogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  padding-top: 10rem;
+}

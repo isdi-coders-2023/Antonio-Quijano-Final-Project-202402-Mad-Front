@@ -1,0 +1,20 @@
+<div class="detailcontainer">
+  @if (card) {
+  <img
+    class="imgdetail"
+    src="{{ card.cover }}"
+    alt="Image"
+    width="340px"
+    height="340px"
+  />
+  <div class="parra">
+    <p>{{ card.artist }}</p>
+    <p>{{ card.album }}</p>
+    <p>{{ card.duration }}</p>
+    <p>{{ card.genre }}</p>
+    <p>{{ card.recordCompany }}</p>
+    <p>{{ card.producer }}</p>
+    <p>{{ card.moreInfo }}</p>
+  </div>
+  }
+</div>

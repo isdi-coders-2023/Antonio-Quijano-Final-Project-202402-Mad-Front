@@ -1,0 +1,18 @@
+.caja-verde {
+  display: flex;
+  margin-top: 80%;
+  align-items: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  align-items: center;
+}
+
+.check {
+  font-size: 36px;
+  margin-right: 20px;
+}

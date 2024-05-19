@@ -1,0 +1,47 @@
+<main>
+  <div class="containerlogin">
+    <img
+      class="logo"
+      src="../../../assets/icons/covervinyl.svg.svg"
+      alt="logo"
+      width="30%"
+      height="30%"
+    />
+    <h2>Log in</h2>
+    <form class="formlogin" [formGroup]="loginForm" (ngSubmit)="handleLogin()">
+      <div>
+        <input
+          class="email"
+          placeholder="email"
+          type="text"
+          name="email"
+          formControlName="email"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <input
+          class="password"
+          placeholder="password"
+          type="password"
+          name="password"
+          formControlName="password"
+          required
+          autocomplete="password"
+        />
+      </div>
+      <br />
+      <div class="buttoncontinue">
+        <input class="buttonreal" type="submit" value="Continue" />
+      </div>
+      <div>
+        <p class="registrate">Aún no tienes cuenta? Regístrate</p>
+        <a [routerLink]="['/register']" routerLinkActive="router-link-active"
+          >aquí</a
+        >
+      </div>
+    </form>
+  </div>
+  <app-menunav></app-menunav>
+</main>
